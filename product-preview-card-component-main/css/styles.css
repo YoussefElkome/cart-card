@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F3EAE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex; /* Use flexbox to center vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+.datails {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 35vh;
+    height: 50%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+img {
+    height: 50%;
+    width: auto;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: auto;
+}
+.img-mobile{
+    display: none;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+h2{
+    font-family: 'Fraunces', serif;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 32px;
+    width:60%;
+    font-weight: 700;
+    line-height: 1;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-left: 2rem;
+    margin-top: 1.3rem;
+    width: 80%;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+.price{
+    display: flex;
+}
+.price-now{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: #014b30;
+    font-weight: bolder;
+    margin-top: 0.6rem;
+}
+.price-before{
+    text-decoration: line-through;
+    margin-left: -10px;
+    margin-top: 1.5rem;
+}
+button{
+    background-color: #3D8168;
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s;
+}
+button:hover{
+    background-color: #316754;
+}
+button:active{
+    background-color: #295646;
+}
+i{
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+        height: auto;
+        width: 90%;
+        border-radius: 10px 0px 0px 10px;
+        align-self: center;
+        margin-right: auto;
+        border-radius: 0 0 0 0;
+        margin-top: 5rem;
+        border-radius: 10px 10px 0px 0px;
+   }
+    .datails{
+        width: 90%;
+        height: 75%;
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: 5rem;
+    }
+    button{
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+}
